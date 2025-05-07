@@ -1,0 +1,287 @@
+body{
+    font-family: "Montserrat", serif;
+    background-color:rgb(0,0,0);
+    color: #fff;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    gap: 5px;
+}
+
+.sidebar{
+    position:relative;
+    width: 340px;
+    height: 100%;
+    background-color:black;
+    border-radius: 2rem;
+}
+.main-content{
+    position:relative;
+    background-color:#121212;
+    flex: 1;
+    overflow: scroll;
+    border-radius: 1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+
+.music-player{
+    position: fixed;
+    bottom: 0;
+    height: 73px;
+    background-color: black;
+    width: 100%;    
+}
+.nav{
+    height: 100px;
+    background-color:#1f1f1f;
+    width: 330px;
+    margin-top :0.5rem; 
+    margin-left: 0.25rem; 
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.75rem ;
+}
+
+.nav-option{
+    opacity: 0.7;
+    line-height: 2.5rem;
+    padding-left: 1.5rem;
+} 
+.nav-option:hover{
+    opacity: 1;  
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    padding-left:0.75rem;
+}
+.nav-option a {
+    font-size: 1rem;
+} 
+.nav-option i{
+    font-size: 1.23rem;
+}
+
+.options{
+    margin-top:0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    padding-left: 1.5rem;
+    margin: 0.25rem; 
+    padding: 0.5rem 0.75rem ;
+} 
+
+.lib-option img{ 
+    height: 1rem; 
+    font-size: 1.5rem;
+}
+.icons{
+    font-size: 1.25rem;
+}
+
+.icons i{
+    opacity: 0.5;
+    padding: 0.5rem;
+}
+.icons i:hover{
+    opacity: 1;
+    cursor: pointer;
+} 
+.box{
+    height: 150px;
+    width: 300px;
+    background-color:#1f1f1f;
+    border-radius: 1rem;
+    margin: 0.8rem 0 0.8rem 0;
+    padding: 1rem 1.25rem;
+    line-height: 2rem;
+}
+.p1{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.p2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+
+}
+.bages{
+    font-size: 0.75rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    border: none;
+    height: 2rem;
+    padding: 0.25rem 0.75rem;
+    margin-top: 0.5rem;
+    width: fit-content;
+    opacity: 0.9;
+}
+.bages:hover{
+    opacity: 1;
+}
+.sticky-nav{
+    padding: 1rem 0 0.5rem 0;
+    /* position: sticky;
+    top: 0; */
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-icons img{
+    height: 1.5rem;
+    margin-left: 1rem;
+}
+.nav-btn{
+    margin-right: 1rem;
+}
+.nav-btn button{
+    margin-right: 0.5rem;
+}
+.dark{
+    background-color: #000;
+    color: #fff;
+}
+.dark i{
+    margin-right: 5px;
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+
+    }
+ 
+}
+@media (max-width:570px){
+    .dark{
+        display: none;
+    }
+}
+.cards-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 0.5rem 1rem 1rem 0.5rem;
+    padding: 1rem;
+    background-color:#1f1f1f;
+    color: white;
+    border-radius: 0.5rem;
+    width: 200px;
+    height: 300px;
+}
+.card-img{
+    border-radius: 1rem;
+    width: 100%;
+}
+.card-title{
+    font-size:1rem;
+    font-weight: 700;
+}
+.card-info{
+    font-size: 1rem;
+    opacity: 0.8;
+}
+.footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.line{
+    margin-top: 100px;
+    height: 200px;
+    border-top: 2px solid white;
+    width: 90%;
+    opacity: 0.5;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+}
+.icons{
+    width: 25%;
+    margin-left: 1rem;
+}
+.play-icons{
+    height: 1rem;
+    margin-right: 1rem;
+    opacity: 0.5;
+}
+.play-icons:hover{
+    opacity: 1;
+}
+.play-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 50%;
+}
+.Album{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.picture-info{
+    display: flex;
+}
+.picture img{
+    height: 4rem;
+    width: 4rem;
+    margin-left: 1rem;
+    border-radius:4px;
+}
+.Anchore{
+    display: flex;
+    flex-direction: column;
+}
+.Anchore a{
+margin-left:  2rem;
+line-height:2rem;
+}
+.picture div{
+    margin-left: 1rem;
+}
+
+.pic-icons{
+    display: flex;
+} 
+
+.pic-icons img{
+    height: 3rem;
+    margin-right: 1rem;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+.icons img{
+    height: 2rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+} 
